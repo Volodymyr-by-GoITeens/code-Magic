@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Magic</title>
-
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="header__logo">
-                <svg class="header__svg"><use href="./img/svg/symbol-defs.svg#icon-logo"></use></svg>
+                <img class="header__logo" src="./img/logo.png" alt="Coding Magic">
             </a>
             <nav class="header__nav">
                 <ul>
                     <li class="header__item">
                         <a href="#" class="header__link">
                             Інтерактив
-                            <svg class="header__arrow"><use href="./img/svg/symbol-defs.svg#icon-unroll"></use></svg>
+                            <img class="header__unroll" src="./img/button/unroll.png" alt="unroll">
                         </a>
                     </li>
                     <li class="header__item">
@@ -29,172 +28,234 @@
                 </ul>
             </nav>
             <button class="header__button" type="button">
-                <img src="./img/button/sun.png" alt="sun">
+                <img class="header__darkMode" src="./img/button/sun.png" alt="sun">
             </button>
             <p class="header__text">Вітаємо, User!</p>
         </div>
     </header>
     <main class="main">
+        <section class="modal">
+            <div class="container modal__container">
+                <button class="modal__close">
+                    <img src="./img/button/close.png" alt="closeb button">
+                </button>
+                <p class="modal__text">Привіт!<br>Ви потрапили на сайт інтерактивних ігор та завдань<br>
+                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>Бажаємо Вам гарно провести час!
+                </p>
+                <p class="modal__undertext">Введіть своє ім’я:</p>
+                <form class="modal__form" action="">
+                    <input class="modal__input" type="text" placeholder="Ваше ім’я...">
+                    <button class="modal__button" type="submit">Зберегти</button>
+                </form>
+                <img src="./img/background-images/sword.png" alt="sword">
+                <img src="./img/background-images/puzzle.png" alt="puzzle">
+                <img src="./img/background-images/tic-tac-toe.png" alt="tic-tac-toe">
+                <img src="./img/background-images/game-develop.png" alt="game development">
+            </div>
+        </section>
         <section class="hero">
-            <h1 class="hero__title">Популярні інетрактивні ігри</h1>
-            <hr class="line">
+            <div class="container hero__container">
+                <h1 class="hero__title">Популярні інетрактивні ігри</h1>
+                <hr class="line">
+            </div>
         </section>
         <section class="year">
-            <h2 class="title">Перевір в який рік ти народився</h2>
-            <form  class="year__form" action="">
-                <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year">
-                <button class="year__button" type="submit">
-                    <svg class="year__svg"><use href="./img/svg/symbol-defs.svg#icon-lupe"></use></svg>
-                </button>
-            </form>
-            <p class="year__answer"></p>
-            <hr class="line">
+            <div class="container hero__container">
+                <h2 class="title">Перевір в який рік ти народився</h2>
+                <form  class="year__form" action="">
+                    <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year">
+                    <button class="year__button" type="submit">
+                        <img class="year__lupe" src="./img/button/lupe.png" alt="lupe">
+                    </button>
+                </form>
+                <p class="year__answer"></p>
+                <hr class="line">
+            </div>
         </section>
         <section class="guess">
-            <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
-            <form  class="guess__form" action="">
-                <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="year">
-                <button class="guess__button" type="submit">
-                    <svg class="guess__svg"><use href="./img/svg/symbol-defs.svg#icon-lupe"></use></svg>
-                </button>
-            </form>
-            <p class="guess__answer"></p>
-            <hr class="line">
+            <div class="container guess__container">
+                <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
+                <form  class="guess__form" action="">
+                    <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="year">
+                    <button class="guess__button" type="submit">
+                        <img class="guess__lupe" src="./img/button/lupe.png" alt="lupe">
+                    </button>
+                </form>
+                <p class="guess__answer"></p>
+                <hr class="line">
+            </div>
         </section>
         <section class="rockGame">
-            <h2 class="title">Камінь - ножиці - папір</h2>
-            <ul class="rockGame__list">
-                <li class="rockGame__item">
-                    <button class="rockGame__button" type="submit" id="rock">
-                        <img src="./img/rock-paper-scissors/stone.png" alt="rock">
-                    </button>
-                </li>
-                <li class="rockGame__item">
-                    <button class="rockGame__button" type="submit" id="sciccor">
-                        <img src="./img/rock-paper-scissors/scissor.png" alt="scissors">
-                    </button>
-                </li>
-                <li class="rockGame__item">
-                    <button class="rockGame__button" type="submit" id="paper">
-                        <img src="./img/rock-paper-scissors/paper.png" alt="paper">
-                    </button>
-                </li>
-            </ul>
-            <p class="rockGame__answer"></p>
-            <button class="rockGame__check" type="button">Варіант комп’ютера</button>
-            <hr class="line">
-        </section>
-        <section class="calculator">
-            <h2 class="title">Варіант комп’ютера</h2>
-            <form class="calculator__form" action="">
-                <input class="calculator__input" type="number" placeholder="Введіть число">
-                <ul class="calculator__list">
-                    <li class="calculator__item">
-                        <button class="calculator__button" type="button" id="plus">
-                            +
+            <div class="container rockGame__container">
+                <h2 class="title">Камінь - ножиці - папір</h2>
+                <ul class="rockGame__list">
+                    <li class="rockGame__item">
+                        <button class="rockGame__button" type="submit" id="rock">
+                            <img class="rockGame__image" src="./img/rock-paper-scissors/stone.png" alt="rock">
                         </button>
                     </li>
-                    <li class="calculator__item">
-                        <button class="calculator__button" type="button" id="minus">
-                            -
+                    <li class="rockGame__item">
+                        <button class="rockGame__button" type="submit" id="sciccor">
+                            <img class="rockGame__image" src="./img/rock-paper-scissors/scissor.png" alt="scissors">
                         </button>
                     </li>
-                    <li class="calculator__item">
-                        <button class="calculator__button" type="button" id="multiply">
-                            *
-                        </button>
-                    </li>
-                    <li class="calculator__item">
-                        <button class="calculator__button" type="button" id="divide">
-                            /
+                    <li class="rockGame__item">
+                        <button class="rockGame__button" type="submit" id="paper">
+                            <img class="rockGame__image" src="./img/rock-paper-scissors/paper.png" alt="paper">
                         </button>
                     </li>
                 </ul>
-                <input class="calculator__input" type="number" placeholder="Введіть число">
-                <button class="calculator__button" type="button" id="equal">
-                    =
-                </button>
-                <input class="calculator__answer" type="number" placeholder="Результат">
-            </form>
-            <hr class="line">
+                <p class="rockGame__answer"></p>
+                <button class="rockGame__check" type="button">Варіант комп’ютера</button>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="calculator">
+            <div class="container calculator__container">
+                <h2 class="title">Варіант комп’ютера</h2>
+                <form class="calculator__form" action="">
+                    <input class="calculator__input" type="number" placeholder="Введіть число">
+                    <ul class="calculator__list">
+                        <li class="calculator__item">
+                            <button class="calculator__button" type="button" id="plus">
+                                +
+                            </button>
+                        </li>
+                        <li class="calculator__item">
+                            <button class="calculator__button" type="button" id="minus">
+                                -
+                            </button>
+                        </li>
+                        <li class="calculator__item">
+                            <button class="calculator__button" type="button" id="multiply">
+                                *
+                            </button>
+                        </li>
+                        <li class="calculator__item">
+                            <button class="calculator__button" type="button" id="divide">
+                                /
+                            </button>
+                        </li>
+                    </ul>
+                    <input class="calculator__input" type="number" placeholder="Введіть число">
+                    <button class="calculator__button" type="button" id="equal">
+                        =
+                    </button>
+                    <input class="calculator__answer" type="number" placeholder="Результат">
+                </form>
+                <hr class="line">
+            </div>
         </section>
         <section class="timeCalc">
-            <h2 class="title">Калькулятор часу</h2>
-            <form  class="timeCalc__form" action="">
+            <div class="container timeCalc__container">
+                <h2 class="title">Калькулятор часу</h2>
+                <form  class="timeCalc__form" action="">
                 <input class="timeCalc__input" placeholder="Введіть число" type="number" name="time" id="time">
                 <button class="timeCalc__button" type="submit">
-                    <svg class="timeCalc__svg"><use href="./img/svg/symbol-defs.svg#icon-lupe"></use></svg>
+                    <img class="timeCalc__lupe" src="./img/button/lupe.png" alt="lupe">
                 </button>
-            </form>
-            <hr class="timeCalc__line">
-            <p class="timeCalc__">1d. 3h.33.m</p>
-            <hr class="line">
-        </section>
+                </form>
+                    <hr class="timeCalc__line">
+                    <p class="timeCalc__">1d. 3h.33.m</p>
+                    <hr class="line">
+                </div>
+            </section>
         <section class="dinosaur">
-            <h2 class="title">Google динозавр</h2>
-            <a rel="stylesheet" href="./dino.html">dinosaur</a>
-            <hr class="line">
+            <div class="container dinosaur__container">
+                <h2 class="title">Google динозавр</h2>
+                <a rel="stylesheet" href="./dino.html">dinosaur</a>
+                <hr class="line">
+            </div>
         </section>
         <section class="football">
-            <h2 class="title">Футбол</h2>
-            <img src="./img/football.png" alt="football">
-            <hr class="line">
+            <div class="container football__container">
+                <h2 class="title">Футбол</h2>
+                <div class="football__zone">
+                <img src="./img/football.png" alt="football">
+            </div>
+                <hr class="line">
+                </div>
         </section>
         <section class="biggestNum">
-            <h2 class="title">Введіть 3 числа</h2>
-            <form action="" class="biggestNum__form">
-                <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_one">
-                <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_two">
-                <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_three">
-            </form>
-            <p class="biggestNum__answer">Найбільше число, яке ви ввели - (число)</p>
-            <hr class="line">
+            <div class="container biggestNum__container">
+                <h2 class="title">Введіть 3 числа</h2>
+                <form action="" class="biggestNum__form">
+                    <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_one">
+                    <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_two">
+                    <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_three">
+                </form>
+                <p class="biggestNum__answer">Найбільше число, яке ви ввели - (число)</p>
+                <hr class="line">
+                </div>
         </section>
-        <section class="team">
-            <button class="team__left">
-                <svg class="team___arrow"><use href="./img/svg/symbol-defs.svg#icon-arrow"></use></svg>
-            </button>
-            <h2 class="title">Наша команда</h2>
-            <img class="team__image" src="" alt="Зоображення учня">
-            <h3 class="team__name">Ім’я студента</h3>
-            <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
-            <button class="team__right">
-                <svg class="team___arrow team__arrow"></svg>
-            </button>
-            <hr class="line">
+        <section class="team"></section>
+            <div class="container team__container">
+                <h2 class="title">Наша команда</h2>
+                <button class="team__left">
+                        <img class="team__arrow-left" src="./img/button/arrow-left.png" alt="arrow-left">
+                </button>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img class="team__image" src="" alt="Зоображення учня">
+                        <h3 class="team__name">Ім’я студента</h3>
+                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="" alt="Зоображення учня">
+                        <h3 class="team__name">Ім’я студента</h3>
+                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="" alt="Зоображення учня">
+                        <h3 class="team__name">Ім’я студента</h3>
+                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
+                    </li>
+                    <li class="team__item">
+                        <img class="team__image" src="" alt="Зоображення учня">
+                        <h3 class="team__name">Ім’я студента</h3>
+                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
+                    </li>
+                </ul>
+                <button class="team__right">
+                    <img class="team__arrow-right" src="./img/button/arrow-right.png" alt="arrow-right">
+                </button>
+                <hr class="line">
+            </div>
         </section>
         <section class="scientists">
-            <h2 class="title">Обери вченого/их</h2>
-            <ul class="scientists__images__list">
-                <li class="scientists__images__item">
-                    <img src="" alt="scientist">
-                </li>
-            </ul>
+            <div class="container scientists__container">
+                <h2 class="title">Обери вченого/их</h2>
+                <ul class="scientists__images__list">
+                    <li class="scientists__images__item">
+                       <img src="" alt="scientist">
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <ul>
             <li class="footer__item">
                 <a href="index.html" class="footer__logo">
-                    <svg class="header__svg"><use href="./img/svg/symbol-defs.svg#icon-logo"></use></svg>
+                    <img class="footer__logo" src="./img/logo.png" alt="Coding Magic">
                 </a>
             </li>
             <li class="footer__item">
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <p class="footer__contact">Тел: +38 (123) 456 78 90</p>
+                        <a class="footer__contact" href="#">Тел: +38 (123) 456 78 90</a>
                     </li>
                     <li class="footer__item">
-                        <p class="footer__contact">E-Mail: codingmagic@gmail.com</p>
+                        <a class="footer__contact" href="#">E-Mail: codingmagic@gmail.com</a>
                     </li>
                     <li class="footer__item">
-                        <p class="footer__contact">Facebook: CodingMagic</p>
+                        <a class="footer__contact" href="#">Facebook: CodingMagic</a>
                     </li>
                     <li class="footer__item">
-                        <p class="footer__contact">Twitter: CodingMagic</p>
+                        <a class="footer__contact" href="#">Twitter: CodingMagic</a>
                     </li>
                     <li class="footer__item">
-                        <p class="footer__contact">Instagram: CodingMagic</p>
+                        <a class="footer__contact" href="#">Instagram: CodingMagic</a>
                     </li>
                 </ul>
             </li>
