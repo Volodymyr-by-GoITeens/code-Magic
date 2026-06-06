@@ -1,0 +1,21 @@
+.container {
+    background-color: $main-bg-color;
+    width: 1090px;
+    margin: 0 auto;
+    padding: 0 175px;
+}
+
+body {
+    font-family: $main-font;
+    color: $text-color;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main {
+    background-color: $bg-color;
+    background-image: url('../img/background-image.png') no-repeat center/cover;
+}
