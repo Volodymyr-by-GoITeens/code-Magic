@@ -3,8 +3,8 @@
 
     &__container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        padding: 0;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -13,8 +13,72 @@
         height: 38.15px;
     }
 
-    &__button{
+    &__button {
         width: 40px;
         height: 20px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 81px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__item {
+        position: relative;
+
+        &:hover {
+            .header__submenu {
+                display: block;
+            }
+        }
+    }
+
+    &__link {
+        color: $text-color;
+        display: block;
+    }
+
+    &__submenu {
+        position: absolute;
+        width: 100%;
+        display: none;
+
+        border-style: solid;
+        border-color: $border-color;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        &__item {
+            padding: 10px;
+            &:hover {
+                background-color: $hover-color;
+            }
+
+            &--last {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+
+        &__link {
+            color: $text-color;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 51px;
+    }
+
+    &__button {
+        cursor: pointer;
     }
 }

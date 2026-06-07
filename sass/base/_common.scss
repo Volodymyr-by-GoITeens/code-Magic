@@ -16,6 +16,5 @@ body {
 }
 
 .main {
-    background-color: $bg-color;
-    background-image: url('../img/background-image.png') no-repeat center/cover;
+    background: url('../img/background-image.png') no-repeat center/cover;
 }

@@ -79,8 +79,7 @@ body {
 }
 
 .main {
-  background-color: #ccc;
-  background-image: url("../img/background-image.png") no-repeat center/cover;
+  background: url("../img/background-image.png") no-repeat center/cover;
 }
 
 .header {
@@ -88,8 +87,8 @@ body {
 }
 .header__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  padding: 0;
+  justify-content: space-between;
   align-items: center;
 }
 .header__logo {
@@ -99,6 +98,56 @@ body {
 .header__button {
   width: 40px;
   height: 20px;
+}
+.header__nav {
+  display: flex;
+  gap: 81px;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+.header__item {
+  position: relative;
+}
+.header__item:hover .header__submenu {
+  display: block;
+}
+.header__link {
+  color: #000;
+  display: block;
+}
+.header__submenu {
+  position: absolute;
+  width: 100%;
+  display: none;
+  border-style: solid;
+  border-color: #000;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header__submenu__item {
+  padding: 10px;
+}
+.header__submenu__item:hover {
+  background-color: #f1f1f1;
+}
+.header__submenu__item--last {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.header__submenu__link {
+  color: #000;
+}
+.header__wrap {
+  display: flex;
+  gap: 51px;
+}
+.header__button {
+  cursor: pointer;
 }
 
 .backdrop {
@@ -130,17 +179,88 @@ body {
   background-color: #fff;
   transform: translate(-50%, -50%);
 }
+.modal__open {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
 
 .hero {
-  padding-top: 36px;
+  padding: 36px 0;
 }
 .hero__title {
   font-size: 24px;
 }
 
+.year {
+  padding: 36px 0;
+}
+
+.guess {
+  padding: 36px 0;
+}
+
+.rockGame {
+  padding: 36px 0;
+}
 .rockGame__button {
   background-color: #000;
   border-radius: 20px;
+}
+
+.calculator {
+  padding: 36px 0;
+}
+
+.timeCalc {
+  padding: 36px 0;
+}
+
+.dinosaur {
+  padding: 36px 0;
+}
+
+.football {
+  padding: 36px 0;
+}
+
+.biggestNum {
+  padding: 36px 0;
+}
+
+.team {
+  padding: 36px 0;
+}
+
+.scientists {
+  padding: 36px 0;
+}
+
+.footer {
+  padding: 61px 0 59px;
+}
+.footer__container {
+  padding: 0;
+}
+.footer__wrap {
+  display: flex;
+  gap: 186px;
+}
+.footer__logo {
+  width: 165px;
+  height: 70px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+.footer__contact {
+  color: #000;
 }
 
 .title {
@@ -151,5 +271,4 @@ body {
   width: 536px;
   height: 0;
   border: 1px solid #000;
-  margin-top: 36px;
 }

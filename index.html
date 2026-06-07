@@ -12,34 +12,42 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <a href="index.html" class="header__logo">
-                <img class="header__logo" src="./img/logo.png" alt="Coding Magic">
-            </a>
             <nav class="header__nav">
-                <ul>
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo" src="./img/logo.png" alt="Coding Magic">
+                </a>
+                <ul class="header__list">
                     <li class="header__item">
                         <a href="#" class="header__link">
                             Інтерактив
                             <img class="header__unroll" src="./img/button/unroll.png" alt="unroll">
                         </a>
                         <ul class="header__submenu">
-                            <li class=""></li>
+                            <li class="header__submenu__item">
+                                <a class="header__submenu__link" href="#year">Числовий</a>
+                            </li>
+                            <li class="header__submenu__item">
+                                <a class="header__submenu__link" href="#dinosaur">Ігровий</a>
+                            </li>
+                            <li class="header__submenu__item header__submenu__item--last">
+                                <a class="header__submenu__link" href="#scientists">Ознайомчий</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Наша команда</a>
+                    <li class="header__item"></li>
+                        <a class="header__link" href="#team">Наша команда</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Контакти</a>
+                        <a class="header__link" href="#contact">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <button class="header__button" type="button">
-                <img class="header__darkMode" src="./img/button/sun.png" alt="sun">
-            </button>
-            <button class="modal-open" type="button" data-open-modal>
-                <p class="header__text">Вітаємо, User!</p>
-            </button>
+            <div class="header__wrap">
+                <button class="header__button" type="button">
+                    <img class="header__darkMode" src="./img/button/sun.png" alt="sun">
+                </button>
+                <button class="modal__open" type="button" data-open-modal>Вітаємо, User!</button>
+            </div>
             <div class="backdrop is-hidden">
                 <div class="modal">
                     <button class="modal__close" type="button" data-close-modal>
@@ -65,10 +73,10 @@
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Популярні інетрактивні ігри</h1>
-                <hr class="line">
             </div>
         </section>
-        <section class="year">
+                <hr class="line">
+        <section class="year" id="year">
             <div class="container hero__container">
                 <h2 class="title">Перевір в який рік ти народився</h2>
                 <form  class="year__form" action="">
@@ -78,9 +86,9 @@
                     </button>
                 </form>
                 <p class="year__answer">iiiiiiiiiiiiiiiiii</p>
-                <hr class="line">
             </div>
         </section>
+                <hr class="line">
         <section class="guess">
             <div class="container guess__container">
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
@@ -91,9 +99,9 @@
                     </button>
                 </form>
                 <p class="guess__answer"></p>
-                <hr class="line">
             </div>
         </section>
+                <hr class="line">
         <section class="rockGame">
             <div class="container rockGame__container">
                 <h2 class="title">Камінь - ножиці - папір</h2>
@@ -116,9 +124,9 @@
                 </ul>
                 <p class="rockGame__answer"></p>
                 <button class="rockGame__check" type="button">Варіант комп’ютера</button>
-                <hr class="line">
             </div>
         </section>
+                <hr class="line">
         <section class="calculator">
             <div class="container calculator__container">
                 <h2 class="title">Варіант комп’ютера</h2>
@@ -147,14 +155,14 @@
                         </li>
                     </ul>
                     <input class="calculator__input" type="number" placeholder="Введіть число">
-                    <button class="calculator__button" type="button" id="equal">
+                    <button class="calculator__button" type="submit" id="equal">
                         =
                     </button>
                     <input class="calculator__answer" type="number" placeholder="Результат">
                 </form>
-                <hr class="line">
             </div>
         </section>
+                <hr class="line">
         <section class="timeCalc">
             <div class="container timeCalc__container">
                 <h2 class="title">Калькулятор часу</h2>
@@ -169,7 +177,7 @@
                     <hr class="line">
                 </div>
             </section>
-        <section class="dinosaur">
+        <section class="dinosaur" id="dinosaur">
             <div class="container dinosaur__container">
                 <h2 class="title">Google динозавр</h2>
                 <a rel="stylesheet" href="./dino.html">dinosaur</a>
@@ -194,10 +202,10 @@
                     <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_three">
                 </form>
                 <p class="biggestNum__answer">Найбільше число, яке ви ввели - (число)</p>
-                <hr class="line">
                 </div>
         </section>
-        <section class="team"></section>
+                <hr class="line">
+        <section class="team" id="team">
             <div class="container team__container">
                 <h2 class="title">Наша команда</h2>
                 <button class="team__left">
@@ -231,7 +239,7 @@
                 <hr class="line">
             </div>
         </section>
-        <section class="scientists">
+        <section class="scientists" id="scientists">
             <div class="container scientists__container">
                 <h2 class="title">Обери вченого/их</h2>
                 <ul class="scientists__images__list">
@@ -242,9 +250,9 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container footer__container">
-            <ul>
+            <ul class="footer__wrap">
                 <li class="footer__item">
                     <a href="index.html" class="footer__logo">
                         <img class="footer__logo" src="./img/logo.png" alt="Coding Magic">
