@@ -75,127 +75,141 @@
                 <h1 class="hero__title">Популярні інетрактивні ігри</h1>
             </div>
         </section>
-                <hr class="line">
-        <section class="year" id="year">
+        <hr class="line">
+        <section class="year">
             <div class="container hero__container">
                 <h2 class="title">Перевір в який рік ти народився</h2>
-                <form  class="year__form" action="">
-                    <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year">
-                    <button class="year__button" type="submit">
-                        <img class="year__lupe" src="./img/button/lupe.png" alt="lupe">
-                    </button>
-                </form>
-                <p class="year__answer">iiiiiiiiiiiiiiiiii</p>
+                <div class="year__wrap">
+                    <form  class="year__form" action="">
+                        <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year">
+                        <button class="year__button" type="submit">
+                            <img class="year__lupe" src="./img/button/lupe.png" alt="lupe">
+                        </button>
+                    </form>
+                    <p class="year__answer">Ви народилися у високосний рік!</p>
+                </div>
             </div>
         </section>
-                <hr class="line">
+        <hr class="line">
         <section class="guess">
             <div class="container guess__container">
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
-                <form  class="guess__form" action="">
-                    <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="year">
-                    <button class="guess__button" type="submit">
+                <div class="guess__wrap">
+                    <form  class="guess__form" action="">
+                        <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="year">
+                        <button class="guess__button" type="submit">
                         <img class="guess__lupe" src="./img/button/lupe.png" alt="lupe">
-                    </button>
-                </form>
-                <p class="guess__answer"></p>
+                        </button>
+                    </form>
+                    <p class="guess__answer">Ви народилися у високосний рік!</p>
+                </div>
             </div>
         </section>
-                <hr class="line">
+        <hr class="line">
         <section class="rockGame">
             <div class="container rockGame__container">
                 <h2 class="title">Камінь - ножиці - папір</h2>
-                <ul class="rockGame__list">
-                    <li class="rockGame__item">
-                        <button class="rockGame__button" type="submit" id="rock">
-                            <img class="rockGame__image" src="./img/rock-paper-scissors/stone.png" alt="rock">
-                        </button>
-                    </li>
-                    <li class="rockGame__item">
-                        <button class="rockGame__button" type="submit" id="sciccor">
-                            <img class="rockGame__image" src="./img/rock-paper-scissors/scissor.png" alt="scissors">
-                        </button>
-                    </li>
-                    <li class="rockGame__item">
-                        <button class="rockGame__button" type="submit" id="paper">
-                            <img class="rockGame__image" src="./img/rock-paper-scissors/paper.png" alt="paper">
-                        </button>
-                    </li>
-                </ul>
-                <p class="rockGame__answer"></p>
-                <button class="rockGame__check" type="button">Варіант комп’ютера</button>
-            </div>
-        </section>
-                <hr class="line">
-        <section class="calculator">
-            <div class="container calculator__container">
-                <h2 class="title">Варіант комп’ютера</h2>
-                <form class="calculator__form" action="">
-                    <input class="calculator__input" type="number" placeholder="Введіть число">
-                    <ul class="calculator__list">
-                        <li class="calculator__item">
-                            <button class="calculator__button" type="button" id="plus">
-                                +
+                <div class="rockGame__wrap">
+                    <ul class="rockGame__list">
+                        <li class="rockGame__item">
+                            <button class="rockGame__button" type="submit" id="rock">
+                                <img class="rockGame__image" src="./img/rock-paper-scissors/stone.png" alt="rock">
                             </button>
                         </li>
-                        <li class="calculator__item">
-                            <button class="calculator__button" type="button" id="minus">
-                                -
+                        <li class="rockGame__item">
+                            <button class="rockGame__button" type="submit" id="sciccor">
+                                <img class="rockGame__image" src="./img/rock-paper-scissors/scissor.png" alt="scissors">
                             </button>
                         </li>
-                        <li class="calculator__item">
-                            <button class="calculator__button" type="button" id="multiply">
-                                *
-                            </button>
-                        </li>
-                        <li class="calculator__item">
-                            <button class="calculator__button" type="button" id="divide">
-                                /
+                        <li class="rockGame__item">
+                            <button class="rockGame__button" type="submit" id="paper">
+                                <img class="rockGame__image" src="./img/rock-paper-scissors/paper.png" alt="paper">
                             </button>
                         </li>
                     </ul>
-                    <input class="calculator__input" type="number" placeholder="Введіть число">
-                    <button class="calculator__button" type="submit" id="equal">
-                        =
-                    </button>
-                    <input class="calculator__answer" type="number" placeholder="Результат">
-                </form>
+                    <p class="rockGame__answer">Ви виграли раунд!</p>
+                    <button class="rockGame__button rockGame__button--check" type="button">Варіант комп’ютера</button>
+                    <p class="rockGame__points">Рахунок:<br>Комп’ютер - 0<br>Ви - 0</p>
+                </div>
             </div>
         </section>
-                <hr class="line">
+        <hr class="line">
+        <section class="calculator">
+            <div class="container calculator__container">
+                <h2 class="title">Калькулятор</h2>
+                <div class="calculator__wrap">
+                    <form class="calculator__form" action="">
+                        <input class="calculator__input" type="number" placeholder="Введіть число">
+                        <ul class="calculator__list">
+                            <li class="calculator__item">
+                                <button class="calculator__button" type="button" id="plus">
+                                    +
+                                </button>
+                            </li>
+                            <li class="calculator__item">
+                                <button class="calculator__button" type="button" id="minus">
+                                    -
+                                </button>
+                            </li>
+                            <li class="calculator__item">
+                                <button class="calculator__button" type="button" id="multiply">
+                                    *
+                                </button>
+                            </li>
+                            <li class="calculator__item">
+                                <button class="calculator__button" type="button" id="divide">
+                                    /
+                                </button>
+                            </li>
+                        </ul>
+                        <input class="calculator__input" type="number" placeholder="Введіть число">
+                        <button class="calculator__button calculator__button--submit" type="submit" id="equal">
+                            =
+                        </button>
+                        <input class="calculator__answer" type="number" placeholder="Результат">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr class="line">
         <section class="timeCalc">
             <div class="container timeCalc__container">
                 <h2 class="title">Калькулятор часу</h2>
-                <form  class="timeCalc__form" action="">
-                <input class="timeCalc__input" placeholder="Введіть число" type="number" name="time" id="time">
-                <button class="timeCalc__button" type="submit">
-                    <img class="timeCalc__lupe" src="./img/button/lupe.png" alt="lupe">
-                </button>
-                </form>
+                <div class="timeCalc__wrap">
+                    <form  class="timeCalc__form" action="">
+                        <input class="timeCalc__input" placeholder="Введіть число" type="number" name="time" id="time">
+                        <button class="timeCalc__button" type="submit">
+                            <img class="timeCalc__lupe" src="./img/button/lupe.png" alt="lupe">
+                        </button>
+                    </form>
                     <hr class="timeCalc__line">
                     <p class="timeCalc__">1d. 3h.33.m</p>
-                    <hr class="line">
                 </div>
-            </section>
+            </div>
+        </section>
+        <hr class="line">
         <section class="dinosaur" id="dinosaur">
             <div class="container dinosaur__container">
                 <h2 class="title">Google динозавр</h2>
-                <a rel="stylesheet" href="./dino.html">dinosaur</a>
-                <hr class="line">
+                <div class="dinosaur__wrap">
+                    <a rel="stylesheet" href="./dino.html">dinosaur</a>
+                </div>
             </div>
         </section>
+        <hr class="line">
         <section class="football">
             <div class="container football__container">
                 <h2 class="title">Футбол</h2>
-                <div class="football__zone">
-                <img src="./img/football.png" alt="football">
-            </div>
-                <hr class="line">
+                <div class="football__wrap">
+                    <img src="./img/football.png" alt="football">
                 </div>
+            </div>
         </section>
+        <hr class="line">
         <section class="biggestNum">
             <div class="container biggestNum__container">
                 <h2 class="title">Введіть 3 числа</h2>
+                <div class="biggestNum__wrap">
                 <form action="" class="biggestNum__form">
                     <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_one">
                     <input class="biggestNum__input" placeholder="Введіть число" type="number" name="number" id="num_two">
@@ -203,50 +217,119 @@
                 </form>
                 <p class="biggestNum__answer">Найбільше число, яке ви ввели - (число)</p>
                 </div>
+            </div>
         </section>
-                <hr class="line">
+        <hr class="line">
         <section class="team" id="team">
             <div class="container team__container">
                 <h2 class="title">Наша команда</h2>
-                <button class="team__left">
-                        <img class="team__arrow-left" src="./img/button/arrow-left.png" alt="arrow-left">
-                </button>
-                <ul class="team__list">
-                    <li class="team__item">
-                        <img class="team__image" src="" alt="Зоображення учня">
-                        <h3 class="team__name">Ім’я студента</h3>
-                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
-                    </li>
-                    <li class="team__item">
-                        <img class="team__image" src="" alt="Зоображення учня">
-                        <h3 class="team__name">Ім’я студента</h3>
-                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
-                    </li>
-                    <li class="team__item">
-                        <img class="team__image" src="" alt="Зоображення учня">
-                        <h3 class="team__name">Ім’я студента</h3>
-                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
-                    </li>
-                    <li class="team__item">
-                        <img class="team__image" src="" alt="Зоображення учня">
-                        <h3 class="team__name">Ім’я студента</h3>
-                        <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
-                    </li>
-                </ul>
-                <button class="team__right">
-                    <img class="team__arrow-right" src="./img/button/arrow-right.png" alt="arrow-right">
-                </button>
-                <hr class="line">
+                <div class="team__wrap">
+                    <button class="team__left">
+                            <img class="team__arrow-left" src="./img/button/arrow-left.png" alt="arrow-left">
+                    </button>
+                    <ul class="team__list">
+                        <li class="team__item">
+                            <img class="team__image" src="" alt="Зоображення учня">
+                            <h3 class="team__name">Ім’я студента</h3>
+                            <p class="team__desc">Інформація про роботу, яку він/вона виконав/ла</p>
+                        </li>
+                    </ul>
+                    <button class="team__right">
+                        <img class="team__arrow-right" src="./img/button/arrow-right.png" alt="arrow-right">
+                    </button>
+                    <ul class="team__line__list">
+                        <li class="team__line__item">
+                            <div class="team__line__line team__line__line--focus"></div>
+                        </li>
+                        <li class="team__line__item">
+                            <div class="team__line__line"></div>
+                        </li>
+                        <li class="team__line__item">
+                            <div class="team__line__line"></div>
+                        </li>
+                        <li class="team__line__item">
+                            <div class="team__line__line"></div>
+                        </li>
+                        <li class="team__line__item">
+                            <div class="team__line__line"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <hr class="line">
         <section class="scientists" id="scientists">
             <div class="container scientists__container">
                 <h2 class="title">Обери вченого/их</h2>
-                <ul class="scientists__images__list">
-                    <li class="scientists__images__item">
-                       <img src="" alt="scientist">
-                    </li>
-                </ul>
+                <div class="scientists__wrap">
+                    <ul class="scientists__images__list">
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                        <li class="scientists__images__item">
+                           <img class="scientists__images__image" src="" alt="scientist">
+                        </li>
+                    </ul>
+                    <ul class="scientists__buttons__list">
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="in19">Які вчені народилися в 19 ст.</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="alberstYear">Знайти рік народження Albert Einshtein</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="alphabet">Відсортувати вчених за алфавітом</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="familyNameC">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="srotLivedYears">Відсортувати вчених за кількістю прожитих років</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="nameA">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="fisrtBorn">Знайти вченого, який народився найпізніше</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="longLivedAndLastLived">Знайти вченого, який прожив найдовше і вченого,<br>який прожив найменше</button>
+                        </li>
+                        <li class="scientists__buttons__item">
+                            <button class="scientists__buttons__button" type="button" id="fimalyNameAndNameSame">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -281,8 +364,8 @@
                     <form action="" class="footer__form">
                         <input class="footer__input" type="text" name="email" id="email" placeholder="Ваша ел. адреса...">
                         <button class="footer__button" type="submit">Підписатись</button>
+                        <p class="footer__starText">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
                     </form>
-                    <p class="footer__starText">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
                 </li>
             </ul>
         </div>

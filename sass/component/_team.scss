@@ -1,3 +1,44 @@
 .team {
     padding: 36px 0;
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-bottom: 43px;
+    }
+
+    &__image {
+        min-width: 150px;
+        min-height: 150px;
+        border-radius: 20px;
+        background-color: $img-color;
+    }
+
+    &__name {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    &__line {
+        &__list {
+           position: absolute;
+           display: flex;
+           bottom: -30px;
+           gap: 6px;
+        }
+
+        &__line {
+            width: 18px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: $line;
+
+            &--focus {
+                width: 30px;
+                background-color: $line-focus;
+            }
+        }
+    }
 }

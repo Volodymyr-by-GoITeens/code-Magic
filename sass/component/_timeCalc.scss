@@ -1,3 +1,38 @@
 .timeCalc {
     padding: 36px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        justify-content: left;
+    }
+
+    &__input {
+        background-color: $input-bg-color;
+        color: $placeholder-color;
+        padding: 10px 25px 10px 10px;
+        border-radius: 20px;
+        box-shadow: $blur;
+    }
+
+    &__button {
+        padding: 10px;
+        background-color: $button-bg-color;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: absolute;
+        left: 170px;
+    }
+    
+    &__line {
+        width: 200px;
+        height: 0px;
+        border: 1px dashed $border-color;
+    }
 }

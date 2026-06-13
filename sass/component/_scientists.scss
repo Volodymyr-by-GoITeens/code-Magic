@@ -1,3 +1,45 @@
 .scientists {
     padding: 36px 0;
+
+    &__images {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 59px;
+            margin-bottom: 36px;
+        }
+
+        &__item {
+            flex-basis: calc((100% - 3 * 59px) / 4);
+        }
+
+        &__image {
+            min-width: 100px;
+            min-height: 100px;
+            background-color: $img-color;
+            border-radius: 20px;
+        }
+    }
+    
+    &__buttons {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        &__item {
+            flex-basis: calc((100% - 36px) / 2);
+        }
+
+        &__button {
+            background-color: $button-bg-color;
+            border-radius: 20px;
+            color: $second-text-color;
+            padding: 10px 20px;
+            box-shadow: $blur;
+        }
+    }
 }

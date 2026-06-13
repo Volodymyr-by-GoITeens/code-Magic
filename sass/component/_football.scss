@@ -1,3 +1,11 @@
 .football {
     padding: 36px 0;
+
+    &__wrap {
+        background-color: $football-bg-color;
+        border: 2px solid $border-color;
+        height: 220px;
+        width: 720px;
+        border-radius: 37px;
+    }
 }

@@ -1,3 +1,19 @@
 .biggestNum {
     padding: 36px 0;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+        margin-bottom: 36px;
+    }
+
+    &__input {
+        background-color: $input-bg-color;
+        color: $placeholder-color;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: $blur;
+    }
+
 }

@@ -25,4 +25,33 @@
     &__contact {
         color: $text-color;
     }
+
+    &__form {
+        display: flex;
+        gap: 36px;
+        position: relative;
+    }
+
+    &__input {
+        background-color: $input-bg-color;
+        color: $placeholder-color;
+        font-family: $main-font;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+    }
+
+    &__button {
+        background-color: $button-bg-color;
+        color: $second-text-color;
+        font-family: $main-font;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    &__starText{
+        position: absolute;
+        font-size: 6px;
+        bottom: -18px;
+    }
 }

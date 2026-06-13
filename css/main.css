@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -82,6 +82,10 @@ body {
   background: url("../img/background-image.png") no-repeat center/cover;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   padding: 21px 0;
 }
@@ -146,9 +150,6 @@ body {
   display: flex;
   gap: 51px;
 }
-.header__button {
-  cursor: pointer;
-}
 
 .backdrop {
   position: fixed;
@@ -198,25 +199,160 @@ body {
 .year {
   padding: 36px 0;
 }
+.year__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year__form {
+  position: relative;
+  display: flex;
+  justify-content: left;
+}
+.year__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.year__button {
+  padding: 10px;
+  background-color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  left: 170px;
+}
 
 .guess {
   padding: 36px 0;
+}
+.guess__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.guess__form {
+  position: relative;
+  display: flex;
+  justify-content: left;
+}
+.guess__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px 45px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.guess__button {
+  padding: 10px;
+  background-color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  left: 170px;
 }
 
 .rockGame {
   padding: 36px 0;
 }
+.rockGame__wrap {
+  position: relative;
+}
 .rockGame__button {
   background-color: #000;
   border-radius: 20px;
+  color: #fff;
+  padding: 10px;
+}
+.rockGame__button--check {
+  padding: 10px 20px;
+}
+.rockGame__list {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.rockGame__answer {
+  padding: 38px 0;
+}
+.rockGame__points {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  right: 0;
 }
 
 .calculator {
   padding: 36px 0;
 }
+.calculator__form {
+  display: flex;
+  gap: 38px;
+}
+.calculator__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 65px;
+}
+.calculator__item {
+  flex-basis: calc((100% - 15px) / 2);
+}
+.calculator__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.calculator__button {
+  background-color: #000;
+  padding: 5px 10px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #fff;
+  border-radius: 20px;
+}
+.calculator__answer {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px;
+  border-radius: 20px;
+}
 
 .timeCalc {
   padding: 36px 0;
+}
+.timeCalc__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+}
+.timeCalc__form {
+  position: relative;
+  display: flex;
+  justify-content: left;
+}
+.timeCalc__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px 25px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.timeCalc__button {
+  padding: 10px;
+  background-color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  left: 170px;
+}
+.timeCalc__line {
+  width: 200px;
+  height: 0px;
+  border: 1px dashed #000;
 }
 
 .dinosaur {
@@ -226,17 +362,100 @@ body {
 .football {
   padding: 36px 0;
 }
+.football__wrap {
+  background-color: #5ABB58;
+  border: 2px solid #000;
+  height: 220px;
+  width: 720px;
+  border-radius: 37px;
+}
 
 .biggestNum {
   padding: 36px 0;
+}
+.biggestNum__form {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  margin-bottom: 36px;
+}
+.biggestNum__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .team {
   padding: 36px 0;
 }
+.team__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 43px;
+}
+.team__image {
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+}
+.team__name {
+  font-size: 14px;
+  padding: 20px 0;
+}
+.team__line__list {
+  position: absolute;
+  display: flex;
+  bottom: -30px;
+  gap: 6px;
+}
+.team__line__line {
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+}
+.team__line__line--focus {
+  width: 30px;
+  background-color: #797979;
+}
 
 .scientists {
   padding: 36px 0;
+}
+.scientists__images__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 59px;
+  margin-bottom: 36px;
+}
+.scientists__images__item {
+  flex-basis: calc((100% - 177px) / 4);
+}
+.scientists__images__image {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #D9D9D9;
+  border-radius: 20px;
+}
+.scientists__buttons__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+.scientists__buttons__item {
+  flex-basis: calc((100% - 36px) / 2);
+}
+.scientists__buttons__button {
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .footer {
@@ -262,9 +481,35 @@ body {
 .footer__contact {
   color: #000;
 }
+.footer__form {
+  display: flex;
+  gap: 36px;
+  position: relative;
+}
+.footer__input {
+  background-color: #D7D7D7;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+.footer__button {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+}
+.footer__starText {
+  position: absolute;
+  font-size: 6px;
+  bottom: -18px;
+}
 
 .title {
   font-size: 16px;
+  padding-bottom: 36px;
 }
 
 .line {

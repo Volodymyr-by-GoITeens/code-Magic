@@ -1,8 +1,35 @@
 .rockGame {
     padding: 36px 0;
 
+    &__wrap {
+        position: relative;
+    }
+
     &__button {
         background-color: $button-bg-color;
         border-radius: 20px;
+        color: $second-text-color;
+        padding: 10px;
+
+        &--check {
+            padding: 10px 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+    }
+    
+    &__answer {
+        padding: 38px 0;
+    }
+
+    &__points {
+        position: absolute;
+        text-align: left;
+        top: 0;
+        right: 0;
     }
 }
