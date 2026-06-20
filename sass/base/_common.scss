@@ -22,3 +22,11 @@ body {
 button {
     cursor: pointer;
 }
+
+.right {
+    color: $right-color;
+}
+
+.wrong {
+    color: $wrong-color;
+}

@@ -76,17 +76,17 @@
             </div>
         </section>
         <hr class="line">
-        <section class="year">
+        <section class="year" id="year">
             <div class="container hero__container">
                 <h2 class="title">Перевір в який рік ти народився</h2>
                 <div class="year__wrap">
                     <form  class="year__form" action="">
-                        <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year">
-                        <button class="year__button" type="submit">
+                        <input class="year__input" placeholder="Введіть рік народження" type="number" name="year" id="year__input">
+                        <button class="year__button" type="button" id="year__submit">
                             <img class="year__lupe" src="./img/button/lupe.png" alt="lupe">
                         </button>
                     </form>
-                    <p class="year__answer">Ви народилися у високосний рік!</p>
+                    <p class="year__answer" id="year__answer">Ви народилися у високосний рік!</p>
                 </div>
             </div>
         </section>
@@ -96,12 +96,12 @@
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
                 <div class="guess__wrap">
                     <form  class="guess__form" action="">
-                        <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="year">
-                        <button class="guess__button" type="submit">
-                        <img class="guess__lupe" src="./img/button/lupe.png" alt="lupe">
+                        <input class="guess__input" placeholder="Введіть число" type="number" name="year" id="guess__input">
+                        <button class="guess__button" type="button" id="guess__submit" >
+                            <img class="guess__lupe" src="./img/button/lupe.png" alt="lupe">
                         </button>
                     </form>
-                    <p class="guess__answer">Ви народилися у високосний рік!</p>
+                    <p class="guess__answer" id="guess__answer">Вітаю, ви вгадали число! (number)</p>
                 </div>
             </div>
         </section>
@@ -112,24 +112,24 @@
                 <div class="rockGame__wrap">
                     <ul class="rockGame__list">
                         <li class="rockGame__item">
-                            <button class="rockGame__button" type="submit" id="rock">
+                            <button class="rockGame__button" type="submit" id="rockGame__rock">
                                 <img class="rockGame__image" src="./img/rock-paper-scissors/stone.png" alt="rock">
                             </button>
                         </li>
                         <li class="rockGame__item">
-                            <button class="rockGame__button" type="submit" id="sciccor">
+                            <button class="rockGame__button" type="submit" id="rockGame__sciccor">
                                 <img class="rockGame__image" src="./img/rock-paper-scissors/scissor.png" alt="scissors">
                             </button>
                         </li>
                         <li class="rockGame__item">
-                            <button class="rockGame__button" type="submit" id="paper">
+                            <button class="rockGame__button" type="submit" id="rockGame__paper">
                                 <img class="rockGame__image" src="./img/rock-paper-scissors/paper.png" alt="paper">
                             </button>
                         </li>
                     </ul>
                     <p class="rockGame__answer">Ви виграли раунд!</p>
-                    <button class="rockGame__button rockGame__button--check" type="button">Варіант комп’ютера</button>
-                    <p class="rockGame__points">Рахунок:<br>Комп’ютер - 0<br>Ви - 0</p>
+                    <button class="rockGame__button rockGame__button--check" type="button" id="rockGame__submit">Варіант комп’ютера</button>
+                    <p class="rockGame__points id=rockGame__answer">Рахунок:<br>Комп’ютер - 0<br>Ви - 0</p>
                 </div>
             </div>
         </section>
@@ -139,34 +139,34 @@
                 <h2 class="title">Калькулятор</h2>
                 <div class="calculator__wrap">
                     <form class="calculator__form" action="">
-                        <input class="calculator__input" type="number" placeholder="Введіть число">
+                        <input class="calculator__input" type="number" placeholder="Введіть число" id="calculator__num1">
                         <ul class="calculator__list">
                             <li class="calculator__item">
-                                <button class="calculator__button" type="button" id="plus">
+                                <button class="calculator__button" type="button" id="calculator__plus">
                                     +
                                 </button>
                             </li>
                             <li class="calculator__item">
-                                <button class="calculator__button" type="button" id="minus">
+                                <button class="calculator__button" type="button" id="calculator__minus">
                                     -
                                 </button>
                             </li>
                             <li class="calculator__item">
-                                <button class="calculator__button" type="button" id="multiply">
+                                <button class="calculator__button" type="button" id="calculator__multiply">
                                     *
                                 </button>
                             </li>
                             <li class="calculator__item">
-                                <button class="calculator__button" type="button" id="divide">
+                                <button class="calculator__button" type="button" id="calculator__divide">
                                     /
                                 </button>
                             </li>
                         </ul>
-                        <input class="calculator__input" type="number" placeholder="Введіть число">
-                        <button class="calculator__button calculator__button--submit" type="submit" id="equal">
+                        <input class="calculator__input" type="number" placeholder="Введіть число" id="calculator__num2">
+                        <button class="calculator__button calculator__button--submit" type="button" id="calculator__equal">
                             =
                         </button>
-                        <input class="calculator__answer" type="number" placeholder="Результат">
+                        <input class="calculator__answer" type="number" placeholder="Результат" id="calculator__result">
                     </form>
                 </div>
             </div>
@@ -370,7 +370,9 @@
             </ul>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
-    <script></script>
+    <script src="./js/year.js"></script>
+    <script src="./js/guess.js"></script>
+    <script src="./js/rockGame.js"></script>
+    <script src="./js/calculator.js"></script>
 </body>
 </html>

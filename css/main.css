@@ -86,6 +86,14 @@ button {
   cursor: pointer;
 }
 
+.right {
+  color: #039900;
+}
+
+.wrong {
+  color: #990000;
+}
+
 .header {
   padding: 21px 0;
 }

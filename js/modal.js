@@ -1,4 +1,4 @@
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -12,4 +12,4 @@
     refs.modal.classList.toggle("is-hidden");
     document.body.classList.toggle("no-scroll");
   }
-})();
+});
