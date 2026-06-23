@@ -65,12 +65,12 @@ label input, label textarea {
   background-color: #fff;
   width: 1090px;
   margin: 0 auto;
-  padding: 0 175px;
 }
 
 body {
   font-family: "Montserrat Alternates", sans-serif;
   color: #000;
+  background-color: #EEE;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -96,6 +96,7 @@ button {
 
 .header {
   padding: 21px 0;
+  background-color: #fff;
 }
 .header__container {
   display: flex;
@@ -133,6 +134,7 @@ button {
   position: absolute;
   width: 100%;
   display: none;
+  background-color: #fff;
   border-style: solid;
   border-color: #000;
   border-left-width: 1px;
@@ -298,6 +300,8 @@ button {
 .calculator__form {
   display: flex;
   gap: 38px;
+  align-items: center;
+  justify-content: center;
 }
 .calculator__list {
   display: flex;
@@ -468,6 +472,7 @@ button {
 
 .footer {
   padding: 61px 0 59px;
+  background-color: #fff;
 }
 .footer__container {
   padding: 0;
@@ -523,5 +528,6 @@ button {
 .line {
   width: 536px;
   height: 0;
+  margin: 0;
   border: 1px solid #000;
 }

@@ -1,5 +1,6 @@
 .header {
     padding: 21px 0;
+    background-color: $main-bg-color;
 
     &__container {
         display: flex;
@@ -47,7 +48,7 @@
         position: absolute;
         width: 100%;
         display: none;
-
+        background-color: $main-bg-color;
         border-style: solid;
         border-color: $border-color;
         border-left-width: 1px;

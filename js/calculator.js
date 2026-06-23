@@ -6,10 +6,28 @@ const calcMultiply = document.querySelector('#calculator__multiply');
 const calcDivide = document.querySelector('#calculator__divide');
 const calcEqual = document.querySelector('#calculator__equal');
 const calcResult = document.querySelector('#calculator__result');
+let calcExecute = undefined;
 
-const calcCheck = () => {
+const plusBut = () => {
+    calcExecute = '+';
+}
+const minusBut = () => {
+    calcExecute = '-';
+}
+const multiplyBut = () => {
+    calcExecute = '*';
+}
+const divideBut = () => {
+    calcExecute = '/';
+}
+
+calcPlus.addEventListener('click', plusBut);
+calcMinus.addEventListener('click', minusBut);
+calcMultiply.addEventListener('click', multiplyBut);
+calcDivide.addEventListener('click', divideBut);
+
+const calcAnswer = () => {
     
 }
 
-calcEqual.addEventListener('click', calcCheck)
-
+calcEqual.addEventListener('submit', calcAnswer);
