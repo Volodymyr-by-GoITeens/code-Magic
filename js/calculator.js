@@ -27,7 +27,16 @@ calcMultiply.addEventListener('click', multiplyBut);
 calcDivide.addEventListener('click', divideBut);
 
 const calcAnswer = () => {
-    
+    let calcExecution = calcExecute;
+    if (calcExecution === '+') {
+        calcResult.value = calcFisrtNum + calcSecondNum;
+    } else if (calcExecution === '-') {
+        calcResult.value = calcFisrtNum - calcSecondNum;
+    } else if (calcExecution === '*') {
+        calcResult.value = calcFisrtNum * calcSecondNum;
+    } else if (calcExecution === '/') {
+        calcResult.value = calcFisrtNum / calcSecondNum;
+    }
 }
 
 calcEqual.addEventListener('submit', calcAnswer);
