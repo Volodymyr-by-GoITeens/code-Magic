@@ -1,3 +1,5 @@
+"use strict";
+
 const guessAnswer = document.querySelector('#guess__answer');
 const guessSubmit = document.querySelector('#guess__submit');
 const guessInput = document.querySelector('#guess__input');

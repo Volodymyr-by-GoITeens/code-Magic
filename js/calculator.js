@@ -1,3 +1,5 @@
+"use strict";
+
 const calcFisrtNum = document.querySelector('#calculator__num1');
 const calcSecondNum = document.querySelector('#calculator__num2');
 const calcPlus = document.querySelector('#calculator__plus');

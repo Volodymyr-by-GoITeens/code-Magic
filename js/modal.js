@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
