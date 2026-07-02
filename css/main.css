@@ -94,6 +94,17 @@ button {
   color: #990000;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 .header {
   padding: 21px 0;
   background-color: #fff;
@@ -199,20 +210,29 @@ button {
   cursor: pointer;
 }
 
-.hero {
+.hero__container {
   padding: 36px 0;
+}
+.hero__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .hero__title {
   font-size: 24px;
 }
 
-.year {
+.year__container {
   padding: 36px 0;
 }
 .year__wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 149px;
 }
 .year__form {
   position: relative;
@@ -232,16 +252,25 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: absolute;
-  left: 170px;
+  right: 0;
 }
 
-.guess {
+.guess__container {
   padding: 36px 0;
+}
+.guess__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .guess__wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 202px;
 }
 .guess__form {
   position: relative;
@@ -252,6 +281,7 @@ button {
   background-color: #D7D7D7;
   color: #7E7E7E;
   padding: 10px 45px 10px 10px;
+  width: 150px;
   border-radius: 20px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
@@ -261,11 +291,19 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: absolute;
-  left: 170px;
+  right: 0;
 }
 
-.rockGame {
+.rockGame__container {
   padding: 36px 0;
+}
+.rockGame__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .rockGame__wrap {
   position: relative;
@@ -287,15 +325,26 @@ button {
 .rockGame__answer {
   padding: 38px 0;
 }
-.rockGame__points {
+.rockGame__score {
   position: absolute;
   text-align: left;
   top: 0;
-  right: 0;
+  display: flex;
+  flex-direction: column;
+  right: 220px;
+  row-gap: 10px;
 }
 
-.calculator {
+.calculator__container {
   padding: 36px 0;
+}
+.calculator__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .calculator__form {
   display: flex;
@@ -333,11 +382,20 @@ button {
   border-radius: 20px;
 }
 
-.timeCalc {
+.timeCalc__container {
   padding: 36px 0;
+}
+.timeCalc__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .timeCalc__wrap {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 33px;
 }
@@ -349,7 +407,7 @@ button {
 .timeCalc__input {
   background-color: #D7D7D7;
   color: #7E7E7E;
-  padding: 10px 25px 10px 10px;
+  padding: 10px 45px 10px 10px;
   border-radius: 20px;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
@@ -359,22 +417,43 @@ button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: absolute;
-  left: 170px;
+  right: 0;
 }
 .timeCalc__line {
-  width: 200px;
+  width: 100px;
   height: 0px;
+  margin: 0;
   border: 1px dashed #000;
 }
 
-.dinosaur {
+.dinosaur__container {
   padding: 36px 0;
+}
+.dinosaur__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 
-.football {
+.football__container {
   padding: 36px 0;
 }
+.football__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
+}
 .football__wrap {
+  display: flex;
+  justify-content: center;
+}
+.football__field {
   background-color: #5ABB58;
   border: 2px solid #000;
   height: 220px;
@@ -382,8 +461,16 @@ button {
   border-radius: 37px;
 }
 
-.biggestNum {
+.biggestNum__container {
   padding: 36px 0;
+}
+.biggestNum__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .biggestNum__form {
   display: flex;
@@ -399,8 +486,16 @@ button {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
-.team {
+.team__container {
   padding: 36px 0;
+}
+.team__container::after {
+  content: "";
+  display: block;
+  width: 536px;
+  margin-top: 36px;
+  border: 1px solid #000;
+  transform: translateX(50%);
 }
 .team__wrap {
   position: relative;
@@ -436,7 +531,7 @@ button {
   background-color: #797979;
 }
 
-.scientists {
+.scientists__container {
   padding: 36px 0;
 }
 .scientists__images__list {
@@ -458,9 +553,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
+  position: relative;
 }
 .scientists__buttons__item {
   flex-basis: calc((100% - 36px) / 2);
+}
+.scientists__buttons__item--center {
+  transform: translateX(50%);
 }
 .scientists__buttons__button {
   background-color: #000;
@@ -523,11 +622,4 @@ button {
 .title {
   font-size: 16px;
   padding-bottom: 36px;
-}
-
-.line {
-  width: 536px;
-  height: 0;
-  margin: 0;
-  border: 1px solid #000;
 }

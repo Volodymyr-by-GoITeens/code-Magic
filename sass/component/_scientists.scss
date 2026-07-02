@@ -1,5 +1,7 @@
 .scientists {
-    padding: 36px 0;
+    &__container {
+        padding: 36px 0;
+    }
 
     &__images {
 
@@ -28,10 +30,15 @@
             display: flex;
             flex-wrap: wrap;
             gap: 36px;
+            position: relative;
         }
 
         &__item {
             flex-basis: calc((100% - 36px) / 2);
+
+            &--center {
+                transform: translateX(50%);
+            }
         }
 
         &__button {

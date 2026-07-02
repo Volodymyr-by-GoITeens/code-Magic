@@ -1,7 +1,23 @@
 .football {
-    padding: 36px 0;
+    &__container {
+        padding: 36px 0;
 
+        &::after {
+            content: '';
+            display: block;
+            width: 536px;
+            margin-top: 36px;
+            border: 1px solid $border-color;
+            transform: translateX(50%);
+        }
+    }
+    
     &__wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__field {
         background-color: $football-bg-color;
         border: 2px solid $border-color;
         height: 220px;

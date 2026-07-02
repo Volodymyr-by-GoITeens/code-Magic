@@ -1,6 +1,17 @@
 .calculator {
-    padding: 36px 0;
+    &__container {
+        padding: 36px 0;
 
+        &::after {
+            content: '';
+            display: block;
+            width: 536px;
+            margin-top: 36px;
+            border: 1px solid $border-color;
+            transform: translateX(50%);
+        }
+    }
+    
     &__form {
         display: flex;
         gap: 38px;

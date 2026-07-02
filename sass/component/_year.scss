@@ -1,10 +1,13 @@
 .year {
-    padding: 36px 0;
+    &__container {
+        padding: 36px 0;
+    }
 
     &__wrap {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 149px;
     }
 
     &__form {
@@ -27,6 +30,6 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         position: absolute;
-        left: 170px;
+        right: 0;
     }
 }

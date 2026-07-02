@@ -75,7 +75,6 @@
                 <h1 class="hero__title">Популярні інетрактивні ігри</h1>
             </div>
         </section>
-        <hr class="line">
         <section class="year" id="year">
             <div class="container hero__container">
                 <h2 class="title">Перевір в який рік ти народився</h2>
@@ -90,7 +89,6 @@
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="guess">
             <div class="container guess__container">
                 <h2 class="title">Вгадай число, яке загадав комп’ютер</h2>
@@ -101,11 +99,10 @@
                             <img class="guess__lupe" src="./img/button/lupe.png" alt="lupe">
                         </button>
                     </form>
-                    <p class="guess__answer" id="guess__answer">Вітаю, ви вгадали число! (number)</p>
+                    <p class="guess__answer" id="guess__answer">Вітаю, ви вгадали число! <span class="guess__number" id="guess__number">(number)</span></p>
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="rockGame">
             <div class="container rockGame__container">
                 <h2 class="title">Камінь - ножиці - папір</h2>
@@ -129,11 +126,14 @@
                     </ul>
                     <p class="rockGame__answer">Ви виграли раунд!</p>
                     <button class="rockGame__button rockGame__button--check" type="button" id="rockGame__submit">Варіант комп’ютера</button>
-                    <p class="rockGame__points id=rockGame__answer">Рахунок:<br>Комп’ютер - 0<br>Ви - 0</p>
+                    <ul class="rockGame__score">
+                        <li class="rockGame__line">Рахунок:</li>
+                        <li class="rockGame__line">Комп’ютер - <span id="rockGame__computerScore">0</span></li>
+                        <li class="rockGame__line">Ви - <span id="rockGame__playerScore">0</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="calculator">
             <div class="container calculator__container">
                 <h2 class="title">Калькулятор</h2>
@@ -171,7 +171,6 @@
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="timeCalc">
             <div class="container timeCalc__container">
                 <h2 class="title">Калькулятор часу</h2>
@@ -183,11 +182,10 @@
                         </button>
                     </form>
                     <hr class="timeCalc__line">
-                    <p class="timeCalc__">1d. 3h.33.m</p>
+                    <p class="timeCalc__answer">1d. 3h.33.m</p>
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="dinosaur" id="dinosaur">
             <div class="container dinosaur__container">
                 <h2 class="title">Google динозавр</h2>
@@ -196,16 +194,16 @@
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="football">
             <div class="container football__container">
                 <h2 class="title">Футбол</h2>
                 <div class="football__wrap">
-                    <img src="./img/football.png" alt="football">
+                    <div class="football__field">
+                        <img src="./img/football.png" alt="football">
+                    </div>
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="biggestNum">
             <div class="container biggestNum__container">
                 <h2 class="title">Введіть 3 числа</h2>
@@ -219,7 +217,6 @@
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="team" id="team">
             <div class="container team__container">
                 <h2 class="title">Наша команда</h2>
@@ -257,7 +254,6 @@
                 </div>
             </div>
         </section>
-        <hr class="line">
         <section class="scientists" id="scientists">
             <div class="container scientists__container">
                 <h2 class="title">Обери вченого/их</h2>
@@ -325,8 +321,8 @@
                         <li class="scientists__buttons__item">
                             <button class="scientists__buttons__button" type="button" id="longLivedAndLastLived">Знайти вченого, який прожив найдовше і вченого,<br>який прожив найменше</button>
                         </li>
-                        <li class="scientists__buttons__item">
-                            <button class="scientists__buttons__button" type="button" id="fimalyNameAndNameSame">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                        <li class="scientists__buttons__item--center">
+                            <button class="scientists__buttons__button scientists__buttons__button" type="button" id="fimalyNameAndNameSame">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
                         </li>
                     </ul>
                 </div>
